@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>אישור הגעה למנגל</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    button {
+      font-size: 20px;
+      padding: 10px 20px;
+      background-color: green;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    #message {
+      margin-top: 30px;
+      font-size: 18px;
+      color: darkgreen;
+    }
+  </style>
+</head>
+<body>
+  <h1>מנגל משפחתי!</h1>
+  <p>אנא אשר הגעה:</p>
+  <button onclick="confirmAttendance()">אני מאשר הגעה</button>
+  <div id="message"></div>
+
+  <script>
+    function confirmAttendance() {
+      document.getElementById("message").innerText = "תודה! ההשתתפות שלך נרשמה.";
+    }
+  </script>
+</body>
+</html>
